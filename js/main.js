@@ -1,16 +1,7 @@
 jQuery(document).ready(function($){
-	
-	$('.cd-product-detail-btn').each(function() {
-		$(this).on("click", function(){
-  $(this).prev('.moretext').slideToggle();
-  if ($('.moreless-button').text() == "Product Detail") {
-    $('.cd-product-detail-btn a').text("Read less")
-  } else {
-    $('.cd-product-detail-btn a').text("Product Detail")
-  }
-});
-});
-	
+	setTimeout(function(){
+$(window).trigger('resize');
+},1000);
 	function productsTable( element ) {
 		this.element = element;
 		this.table = this.element.children('.cd-products-table');
